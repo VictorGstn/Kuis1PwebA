@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LingkaranNews</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="bg-secondary text-white">
+    <nav class="navbar navbar-light navbar-expand bg-dark sticky-top">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+                <h2>LingkaranNews</h2>
+            </div>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Notifikasi
+                </a>
+                
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Rekomendasi Berita1</a>
+                  <a class="dropdown-item" href="#">Rekomendasi Berita2</a>
+                  <a class="dropdown-item" href="#">Rekomendasi Berita3</a>
+                </div>
+            </div>
+            
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light btn" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Kategori
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Berita</a>
+                  <a class="dropdown-item" href="#">Entertainment</a>
+                  <a class="dropdown-item" href="#">Bisnis</a>
+                  <a class="dropdown-item" href="#">Tekno & Sains</a>
+                  <a class="dropdown-item" href="#">Food & Travel</a>
+                  <a class="dropdown-item" href="#">Sports</a>
+                </div>
+            </div>
+            <nav class="navbar navbar-light ">
+                <form class="form-inline">
+                  <button class="btn btn-outline-success" type="button">Masuk</button>
+                  <button class="btn btn-outline-success" type="button">Buat Artikel</button>
+                </form>
+              </nav>
+        </div>
+    </nav>
+    <div id="carouselNews" class="carousel slide container" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselNews" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselNews" data-slide-to="1"></li>
+            <li data-target="#carouselNews" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner w-100">
+          <div class="carousel-item active">
+            <a href="#"><img class="d-block w-100" src="images/srimulyani.jpeg" alt="First slide"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Menkeu di DPR: Surat Rekap PPATK 2009-2023 soal Rp 349 T di Luar Pakem</h5>
+                <p>Dwi Rahmawati</p>
+                <p>27 Mar 2023 12:57 WIB</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img class="d-block w-100" src="images/marc-marquez.jpeg" alt="Second slide"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Marc Marquez Berisiko Alami Patah Tangan Setelah Kecelakaan di Portugal</h5>
+                <p>Celine Kurnia</p>
+                <p>27 Mar 2023 13:01 WIB</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img class="d-block w-100" src="images/kankerusus.jpg" alt="Third slide"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ilmuwan Bingung, Makin Banyak Usia 20-an Kena Kanker Kolorektal</h5>
+                <p>Sarah Oktaviani Alam</p>
+                <p>27 Mar 2023 14:02 WIB</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselNews" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselNews" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <h3 class="mx-auto p-2" style="width: 200px;"> Berita Terbaru</h3>
+    <div class="card-columns text-dark container">
+        <div class="card">
+          <img class="card-img-top" src="images/piala.png" alt="Card image cap">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Kata FIFA soal Wacana Piala Dunia U-20 Batal Digelar di Indonesia </h5></a>
+            <p class="card-text">Jakarta - Status Indonesia sebagai tuan rumah Piala Dunia U-20 2023 sedang disorot. 
+                Ada potensi ajang tersebut batal digelar di Tanah Air. Apa respons FIFA? </p>
+            <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+          </div>
+          
+        </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <a href="#"><p>Siapa yang Punya Ritz Carlton? Ini Dia Orangnya</p></a>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Author <cite title="Source Title">Ignacio Geordi Oswaldo</cite>
+              </small>
+            </footer>
+            <p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+          </blockquote>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="images/banaan.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">5 Resep Nugget Pisang Crispy Sederhana, Cocok Buat Bukber Nih </h5></a>
+            <p class="card-text">
+                Jakarta - Camilan kekinian satu ini banyak disukai oleh masyarakat. 
+                Bagaimana tidak, resep nugget pisang ini cocok untuk dijadikan sajian saat kumpul bersama keluarga, bahkan untuk buka puasa seperti saat Ramadan ini.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card text-center">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Nah Lho! IMF Buka Suara, Krisis Perbankan di Depan Mata?</h5></a>
+            <p class="card-text">Jakarta, CNBC Indonesia - Pasar finansial Indonesia menguat sepanjang pekan lalu. 
+                Indeks Harga Saham Gabungan (IHSG) sukses menguat 1,26% ke 6.762,25, sekaligus mengakhiri kemerosotan dalam empat minggu beruntun.</p>
+            <p class="card-text"><small class="text-muted">Last updated 29 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="images/daniel.jpeg" alt="Card image">
+        </div>
+        <div class="card p-3 text-right">
+          <blockquote class="blockquote mb-0">
+            <a href="#"><p>Daniel Radcliffe, Aktor Harry Potter Segera Jadi Ayah Baru</p></a>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                Author <cite title="Source Title">Linda Hasibuan</cite>
+              </small>
+            </footer>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </blockquote>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <a href="#"><h5 class="card-title">Pemain Timnas Korea Ini Diisukan Pacaran sama Model</h5></a>
+            <p class="card-text">Jakarta, CNBC Indonesia - Baru-baru ini, media Korea Selatan tengah dihebohkan dengan isu kencan pemain timnas Cho Gue Sung dengan model cantik Ji Min Joo.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 hours ago</small></p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
